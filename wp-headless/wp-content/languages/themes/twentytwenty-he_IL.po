@@ -1,0 +1,517 @@
+# Translation of Themes - Twenty Twenty in Hebrew
+# This file is distributed under the same license as the Themes - Twenty Twenty package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2020-10-06 09:52:29+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: GlotPress/3.0.0-alpha.2\n"
+"Language: he_IL\n"
+"Project-Id-Version: Themes - Twenty Twenty\n"
+
+#. Description of the theme
+msgid "Our default theme for 2020 is designed to take full advantage of the flexibility of the block editor. Organizations and businesses have the ability to create dynamic landing pages with endless layouts using the group and column blocks. The centered content column and fine-tuned typography also makes it perfect for traditional blogs. Complete editor styles give you a good idea of what your content will look like, even before you publish. You can give your site a personal touch by changing the background colors and the accent color in the Customizer. The colors of all elements on your site are automatically calculated based on the colors you pick, ensuring a high, accessible color contrast for your visitors."
+msgstr "תבנית עיצוב ברירת המחדל שלנו לשנת 2020. נועד לנצל את מלא היכולות והגמישות של עורך הבלוקים. בתבנית עיצוב זו  ארגונים ועסקים יכולת ליצור דפי נחיתה דינמיים עם פריסות אינסופיות באמצעות בלוקים, קבוצות ועמודות. טור התוכן המרוכז והטיפוגרפיה המותאמת היטב הופכים אותו גם למושלם עבור בלוגים מסורתיים. סגנונות עורך שלמים נותנים לך מושג טוב כיצד ייראה התוכן שלך, עוד לפני פרסום האתר. ניתן לתת לאתר שלך מגע אישי על ידי שינוי צבעי האתר בהתאמה אישית. הצבעים של כל האלמנטים באתר שלך מחושבים באופן אוטומטי על פי הצבעים שתבחר, ומבטיחים ניגודי צבע גבוהה ונגישים למבקרים שלך"
+
+#. Theme Name of the theme
+#: inc/block-patterns.php:20
+msgid "Twenty Twenty"
+msgstr "עשרים עשרים"
+
+#: index.php:51
+msgid "Nothing Found"
+msgstr "לא נמצא דבר"
+
+#: classes/class-twentytwenty-customize.php:246
+msgid "Show author bio"
+msgstr "להציג את פרטי המחבר"
+
+#: inc/starter-content.php:39
+msgctxt "Theme starter content"
+msgid "The New UMoMA Opens its Doors"
+msgstr "מוזיאון UMoMA החדש פותח את דלתותיו"
+
+#: template-parts/entry-author-bio.php:29
+msgid "View Archive <span aria-hidden=\"true\">&rarr;</span>"
+msgstr "לצפות בארכיון <span aria-hidden=\"true\">&larr;</span>"
+
+#: inc/starter-content.php:70 inc/starter-content.php:102
+msgid "August 1 -- December 1"
+msgstr "אוגוסט 1 -- דצמבר 1"
+
+#: classes/class-twentytwenty-customize.php:353
+msgid "The color used for the overlay. Defaults to the accent color."
+msgstr "הצבע המשמש לכיסוי. ברירת מחדל לצבע ההדגשה."
+
+#: classes/class-twentytwenty-customize.php:123
+msgid "Primary Color"
+msgstr "צבע ראשי"
+
+#: classes/class-twentytwenty-customize.php:352
+msgid "Overlay Background Color"
+msgstr "צבע רקע לכיסוי"
+
+#: inc/starter-content.php:73 inc/starter-content.php:88
+#: inc/starter-content.php:105 inc/starter-content.php:120
+#: inc/block-patterns.php:78 inc/block-patterns.php:160
+#: inc/block-patterns.php:174
+msgid "Read More"
+msgstr "קרא עוד"
+
+#: inc/template-tags.php:396
+msgctxt "A string that is output before one or more categories"
+msgid "In"
+msgstr "ב"
+
+#: inc/starter-content.php:151
+msgid "Join the Club"
+msgstr "הצטרפות למועדון"
+
+#: inc/starter-content.php:99 inc/block-patterns.php:168
+msgid "The Life I Deserve"
+msgstr "החיים שמגיע לי"
+
+#: inc/starter-content.php:85 inc/starter-content.php:117
+msgid "October 1 -- December 1"
+msgstr "1 באוקטובר -- 1 בדצמבר"
+
+#: classes/class-twentytwenty-customize.php:183
+msgid "Apply a custom color for links, buttons, featured images."
+msgstr "הגדרת צבע מותאם אישית לרכיבי האתר: כפתורים, קישורים, תמונות מרכזיות."
+
+#: classes/class-twentytwenty-customize.php:395
+msgid "Overlay Opacity"
+msgstr "אטימות שכבת הכיסוי"
+
+#: classes/class-twentytwenty-customize.php:375
+msgid "The color used for the text in the overlay."
+msgstr "הצבע של הטקסט בשכבת הכיסוי"
+
+#: inc/starter-content.php:114
+msgid "From Signac to Matisse"
+msgstr "מסיגנק למאטיס"
+
+#: classes/class-twentytwenty-customize.php:374
+msgid "Overlay Text Color"
+msgstr "צבע הטקסט בשכבת הכיסוי"
+
+#: inc/starter-content.php:48
+msgid "The New UMoMA Opens its Doors"
+msgstr "מוזיאון UMoMA המחודש פותח את דלתותיו"
+
+#: inc/starter-content.php:145
+msgid "Become a Member and Get Exclusive Offers!"
+msgstr "עשו מנוי וקבלו גישה להצעות מיוחדות!"
+
+#: inc/starter-content.php:67 inc/block-patterns.php:154
+msgid "Works and Days"
+msgstr "יצירות ותאריכים"
+
+#: inc/starter-content.php:82
+msgid "Theatre of Operations"
+msgstr "כאן הכל מתרחש"
+
+#: inc/starter-content.php:148 inc/block-patterns.php:45
+msgid "Members get access to exclusive exhibits and sales. Our memberships cost $99.99 and are billed annually."
+msgstr "מנויים מקבלים גישה בלעדית לתערוכות ומכירות מיוחדות. עלות המנוי היא $99.00 לשנה."
+
+#: classes/class-twentytwenty-customize.php:283
+msgid "Settings for the \"Cover Template\" page template. Add a featured image to use as background."
+msgstr "הגדרות עבור תבנית ה״עמוד הראשי״. ניתן להוסיף תמונת ראשית שתשמש כרגע."
+
+#: inc/starter-content.php:56
+msgid "The premier destination for modern art in Northern Sweden. Open from 10 AM to 6 PM every day during the summer months."
+msgstr "היעד מספר אחת לאמנות מודרנית בצפון שבדיה. פתוח בין השעות 10:00 ועד 18:00, בכל יום במהלך חודשי הקיץ."
+
+#: inc/starter-content.php:130
+msgid "&#8220;Cyborgs, as the philosopher Donna Haraway established, are not reverent. They do not remember the cosmos.&#8221;"
+msgstr "״סייבורגים, כפי שהראתה הפילוסופית דונה הרוויי, אינם יראי שמים. אין להם זכרון של הקוסמוס.״"
+
+#: inc/starter-content.php:134
+msgid "With seven floors of striking architecture, UMoMA shows exhibitions of international contemporary art, sometimes along with art historical retrospectives. Existential, political and philosophical issues are intrinsic to our programme. As visitor you are invited to guided tours artist talks, lectures, film screenings and other events with free admission"
+msgstr "בבנין בן שבע קומות בעיצוב אדריכלי מרשים, מוזיאון UMoMA מציג תערוכות של אמנות עכשווית בינלאומית, ולעיתים גם עם רטרוספקטיבות אמנות היסטוריות. הסוגיות קיומיות, הפוליטיות והפילוסופיות הינן מהותיות בתכנית שלנו. המבקרים מוזמנים לסיורים מודרכים של אמנים, הרצאות, הקרנות סרטים וכניסה חופשית לאירועים נוספים"
+
+#: inc/starter-content.php:137
+msgid "The exhibitions are produced by UMoMA in collaboration with artists and museums around the world and they often attract international attention. UMoMA has received a Special Commendation from the European Museum of the Year, and was among the top candidates for the Swedish Museum of the Year Award as well as for the Council of Europe Museum Prize."
+msgstr "התערוכות מופקות על ידי UMoMA בשיתוף פעולה עם אמנים ומוזיאונים ברחבי העולם, וזוכות לעיתים קרובות לתשומת לב בינלאומית. ה-UMoMA זכה לשבחים מיוחדים בתחרות ״המוזיאון האירופי של השנה״, והיה בין המועמדים המובילים ל״פרס מוזיאון השנה״ בשבדיה וכן ל״פרס המוזיאון״ של מועצת אירופה."
+
+#. translators: %s: Number of search results.
+#: index.php:39
+msgid "We found %s result for your search."
+msgid_plural "We found %s results for your search."
+msgstr[0] "מצאנו תוצאה %s עבור החיפוש שלך"
+msgstr[1] "מצאנו %s תוצאות עבור החיפוש שלך"
+
+#. translators: %s: HTML character for up arrow.
+#: footer.php:49
+msgid "Up %s"
+msgstr "למעלה %s"
+
+#. translators: Copyright date format, see
+#. https://www.php.net/manual/datetime.format.php
+#: footer.php:25
+msgctxt "copyright date format"
+msgid "Y"
+msgstr "Y"
+
+#. translators: %s: HTML character for up arrow.
+#: footer.php:43
+msgid "To the top %s"
+msgstr "למעלה %s"
+
+#: searchform.php:24 template-parts/modal-search.php:20
+msgid "Search for:"
+msgstr "חיפוש:"
+
+#: index.php:101
+msgid "search again"
+msgstr "חפש שוב"
+
+#: 404.php:24
+msgid "404 not found"
+msgstr "404 לא נמצא"
+
+#: comments.php:127
+msgid "Comments are closed."
+msgstr "סגור לתגובות."
+
+#: inc/starter-content.php:197
+msgid "Social Links Menu"
+msgstr "תפריט קישורים חברתיים"
+
+#: template-parts/content.php:48 template-parts/content-cover.php:138
+msgid "Pages:"
+msgstr "עמודים:"
+
+#: template-parts/content.php:48 template-parts/content-cover.php:138
+msgid "Page"
+msgstr "עמוד"
+
+#: classes/class-twentytwenty-walker-comment.php:82
+msgid "Edit"
+msgstr "עריכה"
+
+#: template-parts/footer-menus-widgets.php:37
+msgid "Footer"
+msgstr "פוטר"
+
+#: inc/starter-content.php:177 inc/starter-content.php:187
+msgid "Primary"
+msgstr "ראשי"
+
+#: comments.php:88
+msgid "Comments"
+msgstr "תגובות"
+
+#: comments.php:34
+msgid "Leave a comment"
+msgstr "השאר תגובה"
+
+#. Template Name of the theme
+msgid "Full Width Template"
+msgstr "תבנית ברוחב מלא"
+
+#: template-parts/modal-search.php:26
+msgid "Close search"
+msgstr "סגירת החיפוש"
+
+#: template-parts/modal-menu.php:117
+msgid "Expanded Social links"
+msgstr "קישורים חברתיים מורחבים"
+
+#: index.php:32
+msgid "Search:"
+msgstr "חיפוש:"
+
+#: searchform.php:27
+msgctxt "submit button"
+msgid "Search"
+msgstr "חיפוש"
+
+#: searchform.php:25
+msgctxt "placeholder"
+msgid "Search &hellip;"
+msgstr "חיפוש &hellip;"
+
+#: template-parts/content-cover.php:88
+msgid "Scroll Down"
+msgstr "גלילה מטה"
+
+#: index.php:48
+msgid "We could not find any results for your search. You can give it another try through the search form below."
+msgstr "לא מצאנו תוצאות לחיפושך. ניתן לנסות זאת שוב באמצעות טופס החיפוש למטה."
+
+#: template-parts/modal-menu.php:21
+msgid "Close Menu"
+msgstr "סגירת תפריט"
+
+#: inc/template-tags.php:410
+msgid "Tags"
+msgstr "תגיות"
+
+#: inc/template-tags.php:392 template-parts/entry-header.php:36
+#: template-parts/content-cover.php:70
+msgid "Categories"
+msgstr "קטגוריות"
+
+#: header.php:76 header.php:137
+msgid "Menu"
+msgstr "תפריט"
+
+#: template-parts/content.php:36
+msgid "Continue reading"
+msgstr "המשך קריאה"
+
+#: functions.php:549
+msgctxt "Name of the larger font size in the block editor"
+msgid "Larger"
+msgstr "גדול יותר"
+
+#: functions.php:543
+msgctxt "Name of the large font size in the block editor"
+msgid "Large"
+msgstr "גדול"
+
+#: functions.php:537
+msgctxt "Name of the regular font size in the block editor"
+msgid "Regular"
+msgstr "רגיל"
+
+#: functions.php:531
+msgctxt "Name of the small font size in the block editor"
+msgid "Small"
+msgstr "קטן"
+
+#: functions.php:516
+msgid "Background Color"
+msgstr "צבע רקע"
+
+#: functions.php:503
+msgid "Subtle Background"
+msgstr "רקע עדין"
+
+#: functions.php:488
+msgid "Accent Color"
+msgstr "צבע הדגשה"
+
+#: functions.php:383
+msgid "Widgets in this area will be displayed in the second column in the footer."
+msgstr "ווידג'טים באזור זה יוצגו בעמודה השנייה של החלק התחתון של האתר."
+
+#: functions.php:266
+msgid "Social Menu"
+msgstr "תפריט רשתות חברתיות"
+
+#: functions.php:264
+msgid "Mobile Menu"
+msgstr "תפריט להתקנים ניידים"
+
+#: classes/class-twentytwenty-customize.php:81
+msgid "Retina logo"
+msgstr "לוגו למסכי רטינה"
+
+#: classes/class-twentytwenty-walker-comment.php:98
+msgid "Your comment is awaiting moderation."
+msgstr "תגובתך ממתינה לאישור."
+
+#: classes/class-twentytwenty-customize.php:396
+msgid "Make sure that the contrast is high enough so that the text is readable."
+msgstr "יש לוודא שהניגודיות גבוהה מספיק כך שהטקסט יהיה קריא."
+
+#: classes/class-twentytwenty-customize.php:305
+msgid "Fixed Background Image"
+msgstr "תמונת רקע קבועה"
+
+#: classes/class-twentytwenty-customize.php:270
+msgid "Summary"
+msgstr "תקציר"
+
+#: classes/class-twentytwenty-customize.php:269
+msgid "Full text"
+msgstr "טקסט מלא"
+
+#: classes/class-twentytwenty-customize.php:225
+msgid "Show search in header"
+msgstr "הצג חיפוש בחלק העליון של האתר"
+
+#: classes/class-twentytwenty-customize.php:202
+msgid "Theme Options"
+msgstr "אפשרויות התבנית"
+
+#: classes/class-twentytwenty-walker-comment.php:56
+msgid "says:"
+msgstr "אומר:"
+
+#: comments.php:75
+msgid "Older Comments"
+msgstr "תגובות קודמות"
+
+#. translators: 1: Number of comments, 2: Post title.
+#: comments.php:41
+msgctxt "comments title"
+msgid "%1$s reply on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s replies on &ldquo;%2$s&rdquo;"
+msgstr[0] "תגובה %1$s על &ldquo;%2$s&rdquo;"
+msgstr[1] "%1$s תגובות על  &ldquo;%2$s&rdquo;"
+
+#. translators: %s: Post title.
+#: comments.php:37
+msgctxt "comments title"
+msgid "One reply on &ldquo;%s&rdquo;"
+msgstr "תגובה אחת על &ldquo;%s&rdquo;"
+
+#: classes/class-twentytwenty-walker-page.php:107 inc/template-tags.php:558
+msgid "Show sub menu"
+msgstr "הצגת תפריט משנה"
+
+#. translators: %d: ID of a post.
+#: classes/class-twentytwenty-walker-page.php:70
+msgid "#%d (no title)"
+msgstr "#%d (ללא כותרת)"
+
+#: classes/class-twentytwenty-walker-comment.php:133
+msgid "By Post Author"
+msgstr "מאת"
+
+#: template-parts/navigation.php:25
+msgid "Post"
+msgstr "פוסט"
+
+#: template-parts/pagination.php:25
+msgid "Older <span class=\"nav-short\">Posts</span>"
+msgstr "<span class=\"nav-short\">לפוסט הקודם</span>"
+
+#: template-parts/pagination.php:21
+msgid "Newer <span class=\"nav-short\">Posts</span>"
+msgstr "<span class=\"nav-short\">לפוסט הבא</span>"
+
+#. translators: %s: Author name.
+#: inc/template-tags.php:357 template-parts/entry-author-bio.php:20
+msgid "By %s"
+msgstr "מאת %s"
+
+#: inc/template-tags.php:448
+msgid "Sticky post"
+msgstr "פוסטים דביקים"
+
+#: inc/template-tags.php:374
+msgid "Post date"
+msgstr "תאריך פוסט"
+
+#: inc/template-tags.php:350
+msgid "Post author"
+msgstr "המחבר הפוסט"
+
+#: functions.php:544
+msgctxt "Short name of the large font size in the block editor."
+msgid "L"
+msgstr "L"
+
+#: functions.php:550
+msgctxt "Short name of the larger font size in the block editor."
+msgid "XL"
+msgstr "XL"
+
+#: functions.php:538
+msgctxt "Short name of the regular font size in the block editor."
+msgid "M"
+msgstr "M"
+
+#: functions.php:532
+msgctxt "Short name of the small font size in the block editor."
+msgid "S"
+msgstr "S"
+
+#: functions.php:371
+msgid "Widgets in this area will be displayed in the first column in the footer."
+msgstr "ווידג'טים באזור זה יוצגו בעמודה הראשונה של החלק התחתון של האתר."
+
+#: functions.php:344
+msgid "Skip to the content"
+msgstr "דלג לתוכן"
+
+#: 404.php:17
+msgid "Page Not Found"
+msgstr "העמוד לא נמצא"
+
+#. translators: 1: Comment date, 2: Comment time.
+#: classes/class-twentytwenty-walker-comment.php:68
+msgid "%1$s at %2$s"
+msgstr "%1$s בשעה %2$s"
+
+#: footer.php:33
+msgid "Powered by WordPress"
+msgstr "מופעל באמצעות וורדפרס"
+
+#: comments.php:74
+msgid "Newer Comments"
+msgstr "תגובות חדשות"
+
+#: template-parts/footer-menus-widgets.php:57
+msgid "Social links"
+msgstr "קישורים חברתיים"
+
+#. translators: %s: Post title. Only visible to screen readers.
+#: inc/template-tags.php:207
+msgid "Edit <span class=\"screen-reader-text\">%s</span>"
+msgstr "עריכה <span class=\"screen-reader-text\">%s</span>"
+
+#. Template Name of the theme
+#: classes/class-twentytwenty-customize.php:281
+msgid "Cover Template"
+msgstr "תבנית ״העמוד הראשי״"
+
+#: functions.php:263
+msgid "Desktop Expanded Menu"
+msgstr "תפריט מורחב בגודל אתר מלא"
+
+#: functions.php:262
+msgid "Desktop Horizontal Menu"
+msgstr "תפריט אופקי בגדול אתר מלא"
+
+#: classes/class-twentytwenty-customize.php:82
+msgid "Scales the logo to half its uploaded size, making it sharp on high-res screens."
+msgstr "גודל הלוגו יקבע לחצי מגודל הקובץ מקורי, כדי שיהיה חד וברור גם במסכים בעלי רזולוציה גבוהה."
+
+#: classes/class-twentytwenty-customize.php:101
+msgid "Header &amp; Footer Background Color"
+msgstr "צבע הרקע בכותרת ובתחתית העמוד"
+
+#: classes/class-twentytwenty-customize.php:267
+msgid "On archive pages, posts show:"
+msgstr "בדפי הארכיון, הפוסטים יוצגו עם:"
+
+#: classes/class-twentytwenty-customize.php:306
+msgid "Creates a parallax effect when the visitor scrolls."
+msgstr "יוצר אפקט היסט (פרלקסה) בגלילה של העמוד."
+
+#: 404.php:19
+msgid "The page you were looking for could not be found. It might have been removed, renamed, or did not exist in the first place."
+msgstr "לא מצאנו את הדף שחיפשת. יתכן שהוא הוסר, ששמו השתנה או שהוא לא היה קיים מלכתחילה."
+
+#: functions.php:265
+msgid "Footer Menu"
+msgstr "תפריט כותרת תחתית"
+
+#: functions.php:369
+msgid "Footer #1"
+msgstr "כותרת תחתית #1"
+
+#: functions.php:381
+msgid "Footer #2"
+msgstr "כותרת תחתית #2"
+
+#. Author of the theme
+msgid "the WordPress team"
+msgstr "צוות וורדפרס"
+
+#. Author URI of the theme
+#: footer.php:32
+msgid "https://wordpress.org/"
+msgstr "https://he.wordpress.org/"
+
+#. Theme URI of the theme
+msgid "https://wordpress.org/themes/twentytwenty/"
+msgstr "https://he.wordpress.org/themes/twentytwenty/"
