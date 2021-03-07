@@ -5,14 +5,16 @@ import { IndexHero } from '~/components/AppHero/IndexHero';
 import { AppSection } from '~/components/AppSection/AppSection';
 import { useQuery } from '@apollo/client';
 import { initializeApollo } from '~/apollo/apollo';
-import { GET_MENU } from '~/apollo/query/GET_MENU';
+import { GET_HOME } from '~/apollo/query/GET_HOME';
 import { DefaultLayout } from '~/components/DefaultLayout/DefaultLayout';
 
 const Movies = [0, 0, 0, 0, 0, 0, 0, 0, 0];
 
 export default function Home() {
-  const { data } = useQuery(GET_MENU);
+  const { data } = useQuery(GET_HOME);
   const { nodes: menuItems } = data.menu.menuItems;
+
+  console.log(data);
 
   return (
     <Fragment>
@@ -36,6 +38,6 @@ export default function Home() {
 
 export const getStaticProps = async () => {
   const apolloClient = initializeApollo();
-  await apolloClient.query({ query: GET_MENU });
+  await apolloClient.query({ query: GET_HOME });
   return { props: { initialApolloState: apolloClient.cache.extract() } };
 };
