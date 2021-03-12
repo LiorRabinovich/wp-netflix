@@ -1,8 +1,6 @@
 import Link from 'next/link'
 import styles from './AppHeader.module.scss'
 
-
-
 export function AppHeader({ menuItems }) {
     return (
         <header>

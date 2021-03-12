@@ -1,34 +1,32 @@
 import Head from 'next/head'
 import { Fragment } from 'react'
 
-import { IndexHero } from '~/components/AppHero/IndexHero';
+import { AppHero } from '~/components/AppHero/AppHero';
 import { AppSection } from '~/components/AppSection/AppSection';
 import { useQuery } from '@apollo/client';
 import { initializeApollo } from '~/apollo/apollo';
 import { GET_HOME } from '~/apollo/query/GET_HOME';
 import { DefaultLayout } from '~/components/DefaultLayout/DefaultLayout';
 
-const Movies = [0, 0, 0, 0, 0, 0, 0, 0, 0];
-
 export default function Home() {
   const { data } = useQuery(GET_HOME);
   const { nodes: menuItems } = data.menu.menuItems;
-
-  console.log(data);
+  const { nodes: moviesItems } = data.movies;
+  const { nodes: seriesItems } = data.series;
+  const { title, content, extraPostInfo } = data.pageBy;
 
   return (
     <Fragment>
       <Head>
-        <title>Create Next App</title>
+        <title>{title}</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-
       <DefaultLayout menuItems={menuItems}>
-        <IndexHero />
+        <AppHero title={title} content={content} coverUrl={extraPostInfo.cover.mediaItemUrl} />
         <div className="container">
-          <AppSection title="סרטים מומלצים בנטפליקס" items={Movies} />
-          <AppSection title="סדרות מומלצים בנטפליקס" items={Movies} />
+          <AppSection prefixLink="/movies" title="סרטים מומלצים בנטפליקס" items={moviesItems} />
+          <AppSection prefixLink="/series" title="סדרות מומלצים בנטפליקס" items={seriesItems} />
         </div>
       </DefaultLayout>
 
@@ -36,7 +34,7 @@ export default function Home() {
   )
 }
 
-export const getStaticProps = async () => {
+export const getServerSideProps = async () => {
   const apolloClient = initializeApollo();
   await apolloClient.query({ query: GET_HOME });
   return { props: { initialApolloState: apolloClient.cache.extract() } };
