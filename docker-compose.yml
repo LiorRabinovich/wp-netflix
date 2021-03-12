@@ -27,7 +27,7 @@ services:
     depends_on:
       - db
     volumes:
-      - ./wp-headless/wp-content:/var/www/html/wp-content
+      - wp_headless_content:/var/www/html/wp-content
     image: wordpress:latest
     ports:
       - "8000:80"
@@ -39,5 +39,6 @@ services:
       WORDPRESS_DB_NAME: wordpress
 volumes:
   db_data:
+  wp_headless_content:
 networks:
   wordpress:

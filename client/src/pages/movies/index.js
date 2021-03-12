@@ -25,7 +25,7 @@ export default function Movies() {
 
       <DefaultLayout menuItems={menuItems}>
         <AppHero title={title} content={content} coverUrl={extraPostInfo.cover.mediaItemUrl} />
-        <div className="container container--sm">
+        <div className="container">
           {categories.map((category, categoryIndex) => (
             category.movies.nodes.length ? <AppSection key={categoryIndex} prefixLink={`/movies`} title={category.name} items={category.movies.nodes} /> : null
           ))}
