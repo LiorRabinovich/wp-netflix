@@ -4,19 +4,21 @@ import { POSTS_FIELDS } from '../fields/POSTS_FIELDS'
 
 const WHERE = `where: {orderby: {field: DATE, order: DESC}}, first: 10`;
 
-export const GET_HOME = gql`
+export const GET_SERIES = gql`
   query GET_HOME {
     ${GET_MENU}
 
-    series(${WHERE}) {
-      ${POSTS_FIELDS}
-    }
-    
-    movies(${WHERE}) {
-      ${POSTS_FIELDS}
+    categories {
+        nodes {
+            name
+            slug
+            series(${WHERE}) {
+                ${POSTS_FIELDS}
+            }
+        }
     }
 
-    postBy(slug: "index") {
+    postBy(slug: "series") {
       title
       content
       extraPostInfo {

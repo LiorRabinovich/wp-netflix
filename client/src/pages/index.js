@@ -13,7 +13,7 @@ export default function Home() {
   const { nodes: menuItems } = data.menu.menuItems;
   const { nodes: moviesItems } = data.movies;
   const { nodes: seriesItems } = data.series;
-  const { title, content, extraPostInfo } = data.pageBy;
+  const { title, content, extraPostInfo } = data.postBy;
 
   return (
     <Fragment>

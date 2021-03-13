@@ -8,12 +8,18 @@ import { AppMediaContent } from '~/components/AppMediaContent/AppMediaContent';
 import { initializeApollo } from '~/apollo/apollo';
 import { DefaultLayout } from '~/components/DefaultLayout/DefaultLayout';
 import { GET_SERIE } from '~/apollo/query/GET_SERIE';
+import DefaultErrorPage from 'next/error'
 
 export default function Serie(props) {
     const router = useRouter();
     const databaseId = Number(router.query.databaseId)
     const { data } = useQuery(GET_SERIE, { variables: { databaseId } });
     const { nodes: menuItems } = data.menu.menuItems;
+
+    if (!data.serieBy) {
+        return <DefaultErrorPage menuItems={menuItems} statusCode={404} title="לא נמצא סדרה" />
+    }
+
     const { title, content, extraPostInfo } = data.serieBy;
     const { trailer, cover, description } = extraPostInfo;
     const { mediaItemUrl: coverUrl } = cover;

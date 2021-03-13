@@ -18,7 +18,7 @@ export const GET_MOVIES = gql`
         }
     }
 
-    pageBy(pageId: 152) {
+    postBy(slug: "movies") {
       title
       content
       extraPostInfo {
