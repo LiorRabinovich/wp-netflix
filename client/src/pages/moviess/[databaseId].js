@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import { Fragment } from 'react'
 import { useRouter } from 'next/router'
+import DefaultErrorPage from 'next/error'
 import { useQuery } from '@apollo/client';
 
 import { AppHero } from '~/components/AppHero/AppHero';
@@ -9,11 +10,21 @@ import { initializeApollo } from '~/apollo/apollo';
 import { DefaultLayout } from '~/components/DefaultLayout/DefaultLayout';
 import { GET_MOVIE } from '~/apollo/query/GET_MOVIE';
 
-export default function Movie(props) {
+export default function Movie() {
     const router = useRouter();
     const databaseId = Number(router.query.databaseId)
+
+    if (!databaseId) {
+        return <DefaultErrorPage statusCode={404} />
+    }
+
     const { data } = useQuery(GET_MOVIE, { variables: { databaseId } });
     const { nodes: menuItems } = data.menu.menuItems;
+
+    if (!data.movieBy) {
+        return <DefaultErrorPage statusCode={404} />
+    }
+
     const { title, content, extraPostInfo } = data.movieBy;
     const { trailer, cover, description } = extraPostInfo;
     const { mediaItemUrl: coverUrl } = cover;
@@ -38,6 +49,7 @@ export default function Movie(props) {
 
 export const getServerSideProps = async ({ params }) => {
     const databaseId = Number(params.databaseId);
+    if (!databaseId) return { props: {} };
     const apolloClient = initializeApollo();
     await apolloClient.query({ query: GET_MOVIE, variables: { databaseId } });
     return { props: { initialApolloState: apolloClient.cache.extract() } };

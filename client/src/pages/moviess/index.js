@@ -5,11 +5,11 @@ import { AppHero } from '~/components/AppHero/AppHero';
 import { AppSection } from '~/components/AppSection/AppSection';
 import { useQuery } from '@apollo/client';
 import { initializeApollo } from '~/apollo/apollo';
-import { GET_SERIES } from '~/apollo/query/GET_SERIES';
+import { GET_MOVIES } from '~/apollo/query/GET_MOVIES';
 import { DefaultLayout } from '~/components/DefaultLayout/DefaultLayout';
 
-export default function Series() {
-  const { data } = useQuery(GET_SERIES);
+export default function Movies() {
+  const { data } = useQuery(GET_MOVIES);
   const { nodes: menuItems } = data.menu.menuItems;
   const { nodes: categories } = data.categories;
   const { title, content, extraPostInfo } = data.postBy;
@@ -25,7 +25,7 @@ export default function Series() {
         <AppHero title={title} content={content} coverUrl={extraPostInfo.cover.mediaItemUrl} />
         <div className="container">
           {categories.map((category, categoryIndex) => (
-            category.series.nodes.length ? <AppSection key={categoryIndex} prefixLink={`/series`} title={category.name} items={category.series.nodes} /> : null
+            category.movies.nodes.length ? <AppSection key={categoryIndex} href={`/movies/category/${category.slug}`} prefixLink={`/movies`} title={category.name} items={category.movies.nodes} /> : null
           ))}
         </div>
       </DefaultLayout>
@@ -36,6 +36,6 @@ export default function Series() {
 
 export const getServerSideProps = async () => {
   const apolloClient = initializeApollo();
-  await apolloClient.query({ query: GET_SERIES });
+  await apolloClient.query({ query: GET_MOVIES });
   return { props: { initialApolloState: apolloClient.cache.extract() } };
 };

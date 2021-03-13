@@ -25,8 +25,8 @@ export default function Home() {
       <DefaultLayout menuItems={menuItems}>
         <AppHero title={title} content={content} coverUrl={extraPostInfo.cover.mediaItemUrl} />
         <div className="container">
-          <AppSection prefixLink="/movies" title="סרטים מומלצים בנטפליקס" items={moviesItems} />
-          <AppSection prefixLink="/series" title="סדרות מומלצים בנטפליקס" items={seriesItems} />
+          <AppSection href="/movies" prefixLink="/movies" title="סרטים מומלצים בנטפליקס" items={moviesItems} />
+          <AppSection href="/series" prefixLink="/series" title="סדרות מומלצים בנטפליקס" items={seriesItems} />
         </div>
       </DefaultLayout>
 
