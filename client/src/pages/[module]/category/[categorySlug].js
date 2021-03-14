@@ -6,7 +6,7 @@ import { useQuery } from '@apollo/client';
 
 import { MODULES } from '~/consts/MODULES';
 import { AppHero } from '~/components/AppHero/AppHero';
-import { AppSection } from '~/components/AppSection/AppSection';
+import { CardsList } from '~/components/CardsList/CardsList';
 import { DefaultLayout } from '~/components/DefaultLayout/DefaultLayout';
 import { initializeApollo } from '~/apollo/apollo';
 import { GET_CATEGORY_MOVIES } from '~/apollo/query/GET_CATEGORY_MOVIES';
@@ -23,14 +23,15 @@ export default function Category() {
         return <DefaultErrorPage statusCode={404} />
     }
 
-    const { data } = useQuery(modulesQuery[module], { variables: { categorySlug } });
+    const { data } = useQuery(modulesQuery[module], { variables: { slug: categorySlug, pageSlug: `series-category-${categorySlug}` } });
+    console.log(data)
     const { nodes: menuItems } = data.menu.menuItems;
 
-    if (!data.category[module].nodes.length) {
+    if (!data.categories.nodes[0][module].nodes.length) {
         return <DefaultErrorPage statusCode={404} />
     }
 
-    const { name } = data.category;
+    const { name } = data.categories.nodes[0];
     const { title, content, extraPostInfo } = data.postBy;
     const { mediaItemUrl: coverUrl } = extraPostInfo.cover;
 
@@ -44,7 +45,7 @@ export default function Category() {
             <DefaultLayout menuItems={menuItems}>
                 <AppHero title={title} content={content} coverUrl={coverUrl} />
                 <div className="container">
-                    <AppSection href={module} prefixLink={`/${module}`} title={name} items={data.category[module].nodes} />
+                    <CardsList prefixLink={`/${module}`} items={data.categories.nodes[0][module].nodes} />
                 </div>
             </DefaultLayout>
 
@@ -61,6 +62,6 @@ export const getServerSideProps = async ({ params }) => {
     }
 
     const apolloClient = initializeApollo();
-    await apolloClient.query({ query: modulesQuery[module], variables: { categorySlug } });
+    await apolloClient.query({ query: modulesQuery[module], variables: { slug: categorySlug, pageSlug: `${module}-category-${categorySlug}` } });
     return { props: { initialApolloState: apolloClient.cache.extract() } };
 };

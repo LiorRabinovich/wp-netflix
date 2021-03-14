@@ -5,18 +5,20 @@ import { POSTS_FIELDS } from '../fields/POSTS_FIELDS'
 const WHERE = `where: {orderby: {field: DATE, order: DESC}}, first: 10`;
 
 export const GET_CATEGORY_MOVIES = gql`
-  query GET_CATEGORY_MOVIES {
+  query GET_CATEGORY_MOVIES ($slug: String!) {
     ${GET_MENU}
 
-    category(id: "movies/category/action", idType: SLUG) {
-      name
-      slug
-      movies(${WHERE}) {
-          ${POSTS_FIELDS}
+    categories(where: {search: $slug}) {
+      nodes {
+        name
+        slug
+        movies(${WHERE}) {
+            ${POSTS_FIELDS}
+        }
       }
     }
 
-    postBy(slug: "movies/category/action") {
+    postBy(slug: "index") {
       title
       content
       extraPostInfo {

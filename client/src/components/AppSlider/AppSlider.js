@@ -1,9 +1,9 @@
 import { useEffect, useRef, useState } from 'react';
 import clsx from 'clsx'
-import Link from 'next/link'
-import { AppSliderItem } from './AppSliderItem';
 import { FaAngleLeft } from "@react-icons/all-files/fa/FaAngleLeft";
 import { FaAngleRight } from "@react-icons/all-files/fa/FaAngleRight";
+
+import { CardsList } from '~/components/CardsList/CardsList';
 import styles from './AppSlider.module.scss'
 
 function scrollExist(ref) {
@@ -59,18 +59,7 @@ export function AppSlider({ prefixLink, items }) {
     return (
         <div className={styles.sliderContainer}>
             <div ref={$slider} className={styles.slider}>
-                <ul ref={$container}>
-                    {items.map((item, indexItem) => (
-                        <AppSliderItem
-                            key={indexItem}
-                            prefixLink={prefixLink}
-                            databaseId={item.databaseId}
-                            title={item.title}
-                            description={item.extraPostInfo.description}
-                            imgUrl={item.featuredImage?.node?.mediaItemUrl}
-                        />
-                    ))}
-                </ul>
+                <CardsList forwardRef={$container} prefixLink={prefixLink} items={items} />
             </div>
             {prevBtnExist ? (<button onClick={handlePrevBtn} className={clsx(styles.sliderButton, styles.sliderPrev)}><FaAngleRight size="50px" /></button>) : null}
             {nextBtnExist ? (<button onClick={handleNextBtn} className={clsx(styles.sliderButton, styles.sliderNext)}><FaAngleLeft size="50px" /></button>) : null}

@@ -9,9 +9,8 @@
     scroll-behavior: smooth;
 
     ul {
-        display: flex;
+        flex-wrap: nowrap;
         justify-content: space-between;
-        gap: 20px;
     }
 }
 
