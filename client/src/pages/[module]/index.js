@@ -12,6 +12,7 @@ import { GET_MOVIES } from '~/apollo/query/GET_MOVIES';
 import { GET_SERIES } from '~/apollo/query/GET_SERIES';
 
 const modulesQuery = { movies: GET_MOVIES, series: GET_SERIES };
+const modulesPrefix = { movies: 'סרטי', series: 'סדרות' };
 
 export default function List() {
     const router = useRouter();
@@ -37,7 +38,14 @@ export default function List() {
                 <AppHero title={title} content={content} coverUrl={extraPostInfo.cover.mediaItemUrl} />
                 <div className="container">
                     {categories.map((category, categoryIndex) => (
-                        category[module].nodes.length ? <AppSection key={categoryIndex} href={`/${module}/category/${category.slug}`} prefixLink={`/${module}`} title={category.name} items={category[module].nodes} /> : null
+                        category[module].nodes.length ?
+                            <AppSection
+                                key={categoryIndex}
+                                href={`/${module}/category/${category.slug}`}
+                                prefixLink={`/${module}`}
+                                title={`${modulesPrefix[module]} ${category.name}`}
+                                items={category[module].nodes} /> :
+                            null
                     ))}
                 </div>
             </DefaultLayout>
