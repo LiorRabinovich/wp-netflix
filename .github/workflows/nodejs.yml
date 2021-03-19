@@ -17,7 +17,7 @@ jobs:
         with:
           node-version: 12
       - name: Install dependencies
-        run: npm run install
+        run: npm install
         working-directory: client
       - name: Build client
         run: npm run build
