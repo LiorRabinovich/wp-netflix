@@ -43,10 +43,7 @@ export default function Single() {
             </Head>
 
             <DefaultLayout menuItems={menuItems}>
-                <AppHero title={title} content={description} coverUrl={coverUrl} />
-                <div className="container">
-                    <AppMediaContent trailer={trailer} content={content} />
-                </div>
+                <AppMediaContent trailer={trailer} title={title} content={content} />
             </DefaultLayout>
 
         </Fragment>

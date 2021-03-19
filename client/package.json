@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "setup": "pm2 start ecosystem.config.js"
   },
   "dependencies": {
     "@apollo/client": "^3.3.11",
